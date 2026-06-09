@@ -1,0 +1,11 @@
+<mat-card class="skill-card">
+  <img [src]="icon" [alt]="name" />
+  <h4>
+    {{ name }}
+  </h4>
+  <p [class.advanced]="percentage >= 75" [class.intermediate]="percentage < 75">
+    {{ level }}
+  </p>
+  <mat-progress-bar mode="determinate" [value]="percentage"> </mat-progress-bar>
+  <span class="percentage"> {{ percentage }}% </span>
+</mat-card>

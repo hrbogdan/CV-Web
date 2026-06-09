@@ -1,0 +1,24 @@
+<section class="skill-section">
+  <h2>Technologies & Skills</h2>
+
+  @for (section of sections; track section) {
+    <section class="category-section">
+      <div class="category-header">
+        <h3>{{ section }}</h3>
+        <div class="category-line"></div>
+      </div>
+    </section>
+    <div class="skill-grid">
+      @for (skill of skills; track skill.name) {
+        @if (skill.section === section) {
+          <skill-detail
+            [name]="skill.name"
+            [level]="skill.level"
+            [percentage]="skill.percentage"
+            [icon]="skill.icon"
+          />
+        }
+      }
+    </div>
+  }
+</section>

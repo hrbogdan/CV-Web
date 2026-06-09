@@ -1,0 +1,134 @@
+.table-container {
+  width: 100%;
+
+  margin-bottom: 4rem;
+}
+
+.table-title {
+  position: relative;
+
+  display: inline-block;
+
+  margin-bottom: 1.5rem;
+
+  font-size: 800;
+
+  color: #1f1f1f;
+}
+
+.table-title::after {
+  content: '';
+
+  position: absolute;
+
+  left: 0;
+  bottom: -8px;
+
+  width: 100%;
+
+  height: 4px;
+
+  border-radius: 999px;
+
+  background: linear-gradient(to right, #ab47bc, transparent);
+}
+
+/* ========================= */
+/* TABLE */
+/* ========================= */
+
+.table-wrapper {
+  overflow-x: auto;
+
+  border-radius: 16px;
+}
+
+table {
+  width: 100%;
+
+  background: rgba(255, 255, 255, 0.03);
+
+  border-radius: 20px;
+
+  overflow: hidden;
+}
+
+/* ========================= */
+/* HEADER */
+/* ========================= */
+
+.mat-mdc-header-row {
+  background: rgba(171, 71, 188, 0.08);
+}
+
+.mat-mdc-header-cell {
+  color: #ab47bc !important;
+
+  font-size: 1rem;
+
+  font-weight: 700;
+
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+
+/* ========================= */
+/* CELLS */
+/* ========================= */
+
+.mat-mdc-cell,
+.mat-mdc-header-cell {
+  padding: 1rem;
+
+  vertical-align: middle;
+}
+
+/* ========================= */
+/* ROWS */
+/* ========================= */
+
+.mat-mdc-row {
+  transition: background 0.3s ease;
+}
+
+.mat-mdc-row:hover {
+  background: rgba(171, 71, 188, 0.04);
+
+  transform: scale(1.002);
+
+  transition:
+    background 0.3s ease,
+    transform 0.2s ease;
+}
+
+/* ========================= */
+/* LINKS */
+/* ========================= */
+
+a {
+  color: #ab47bc;
+
+  text-decoration: none;
+
+  font-weight: 700;
+
+  transition:
+    opacity 0.3s ease,
+    transform 0.2s ease;
+}
+
+a:hover {
+  opacity: 0.8;
+
+  transform: translateY(-1px);
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 768px) {
+  table {
+    min-width: 850px;
+  }
+}

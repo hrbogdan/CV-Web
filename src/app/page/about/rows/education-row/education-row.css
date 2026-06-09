@@ -1,0 +1,47 @@
+td {
+  padding: 1.25rem 1rem;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+  font-size: 1rem;
+
+  line-height: 1.4;
+
+  vertical-align: middle;
+}
+
+/* HOVER */
+
+tr {
+  transition: background 0.3s ease;
+}
+
+tr:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+/* INDEX */
+
+.index-column {
+  text-align: center;
+
+  font-weight: 700;
+
+  opacity: 0.7;
+}
+
+/* WEBSITE */
+
+td:last-child {
+  text-align: center;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  td {
+    padding: 1rem 0.75rem;
+
+    font-size: 0.9rem;
+  }
+}

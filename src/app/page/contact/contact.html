@@ -1,0 +1,39 @@
+<form [formGroup]="contactForm" (ngSubmit)="submit()" class="contact-form">
+  <!-- Name -->
+  <mat-form-field appearance="outline">
+    <mat-label>Name</mat-label>
+    <input matInput formControlName="name" />
+
+    @if (contactForm.controls.name.hasError('required')) {
+      <mat-error> Name is required! </mat-error>
+    }
+  </mat-form-field>
+
+  <!-- Email -->
+  <mat-form-field appearance="outline">
+    <mat-label>Email</mat-label>
+    <input matInput formControlName="email" />
+
+    @if (contactForm.controls.email.hasError('email')) {
+      <mat-error>Invalid email!</mat-error>
+    }
+  </mat-form-field>
+
+  <!-- Phone -->
+  <mat-form-field appearance="outline">
+    <mat-label>Phone</mat-label>
+    <input matInput formControlName="phone" />
+
+    @if (contactForm.controls.phone.hasError('pattern')) {
+      <mat-error>Invalid Phone Number!</mat-error>
+    }
+  </mat-form-field>
+
+  <!-- Message -->
+  <mat-form-field appearance="outline">
+    <mat-label>Message</mat-label>
+    <textarea matInput rows="5" formControlName="message"></textarea>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" type="submit">Send</button>
+</form>

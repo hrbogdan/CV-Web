@@ -1,0 +1,38 @@
+<div class="table-container">
+  <h2 class="table-title">
+    {{ title }}
+  </h2>
+
+  <div class="table-wrapper">
+    <table mat-table matSort [dataSource]="dataSource" multiTemplateDataRows>
+      <ng-container *ngFor="let column of columns" [matColumnDef]="column.key">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header [disabled]="column.key === 'webSite'">
+          {{ column.label }}
+        </th>
+
+        <td mat-cell *matCellDef="let item; let i = dataIndex">
+          <ng-container *ngIf="column.key === 'index'">
+            {{ i + 1 }}
+          </ng-container>
+
+          <ng-container *ngIf="column.key === 'webSite'">
+            <a [href]="item.webSite" target="_blank"> Visit </a>
+          </ng-container>
+
+          <ng-container *ngIf="column.key !== 'index' && column.key !== 'webSite'">
+            {{ item[column.key] }}
+          </ng-container>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+    <mat-paginator
+      [pageSize]="3"
+      [pageSizeOptions]="[5, 10, 15, 20]"
+      showFirstLastButtons
+    ></mat-paginator>
+  </div>
+</div>

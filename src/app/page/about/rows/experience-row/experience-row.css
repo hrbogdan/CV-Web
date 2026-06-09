@@ -1,0 +1,31 @@
+td {
+  padding: 1rem;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+  font-size: 1rem;
+}
+
+tr:hover {
+  background: rgba(255, 255, 255, 0.03);
+
+  transition: background 0.3s ease;
+}
+
+.index-column {
+  width: 60px;
+
+  text-align: center;
+
+  font-weight: 700;
+
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  td {
+    padding: 0.75rem;
+
+    font-size: 0.9rem;
+  }
+}

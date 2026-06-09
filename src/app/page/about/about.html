@@ -1,0 +1,111 @@
+<div class="search-container">
+  <div class="search-wrapper">
+    <input
+      type="text"
+      placeholder="Search anything..."
+      class="search-input"
+      [(ngModel)]="searchTerm"
+      (input)="applySearch()"
+    />
+  </div>
+</div>
+
+<mat-accordion [multi]="false">
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title> Education & Training </mat-panel-title>
+    </mat-expansion-panel-header>
+
+    <spec-table
+      title=""
+      [columns]="[
+        {
+          key: 'index',
+          label: '#',
+        },
+        {
+          key: 'period',
+          label: 'Period',
+        },
+        {
+          key: 'institution',
+          label: 'Institution',
+        },
+        {
+          key: 'specialization',
+          label: 'Specialization',
+        },
+        {
+          key: 'diploma',
+          label: 'Diploma',
+        },
+        {
+          key: 'webSite',
+          label: 'Website',
+        },
+      ]"
+      [data]="filteredEducation"
+    />
+  </mat-expansion-panel>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>Experience</mat-panel-title>
+    </mat-expansion-panel-header>
+
+    <spec-table
+      title=""
+      [columns]="[
+        {
+          key: 'index',
+          label: '#',
+        },
+        {
+          key: 'period',
+          label: 'Period',
+        },
+        {
+          key: 'organization',
+          label: 'Organization',
+        },
+        {
+          key: 'position',
+          label: 'Position',
+        },
+
+        {
+          key: 'webSite',
+          label: 'Website',
+        },
+      ]"
+      [data]="filteredExperience"
+    />
+  </mat-expansion-panel>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>Skills</mat-panel-title>
+    </mat-expansion-panel-header>
+
+    <spec-table
+      title=""
+      [columns]="[
+        {
+          key: 'index',
+          label: '#',
+        },
+        {
+          key: 'section',
+          label: 'Section',
+        },
+        {
+          key: 'name',
+          label: 'Name',
+        },
+        {
+          key: 'level',
+          label: 'Level',
+        },
+      ]"
+      [data]="filteredSkills"
+    />
+  </mat-expansion-panel>
+</mat-accordion>

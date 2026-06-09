@@ -1,0 +1,81 @@
+export const SKILLS_DATA = [
+  {
+    section: 'Design',
+    name: 'Adobe Photoshop',
+    level: 'Advanced',
+    percentage: 95,
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg',
+  },
+  {
+    section: 'Design',
+    name: 'Adobe Illustrator',
+    level: 'Advanced',
+    percentage: 92,
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg',
+  },
+  {
+    section: 'Design',
+    name: 'Adobe Premiere Pro',
+    level: 'Intermediate',
+    percentage: 45,
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/premierepro/premierepro-plain.svg',
+  },
+  {
+    section: 'Design',
+    name: 'Adobe After Effects',
+    level: 'Intermediate',
+    percentage: 45,
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aftereffects/aftereffects-plain.svg',
+  },
+  {
+    section: 'Design',
+    name: 'Adobe Lightroom',
+    level: 'Intermediate',
+    percentage: 39,
+    icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Adobe_Photoshop_Lightroom_CC_logo.svg/960px-Adobe_Photoshop_Lightroom_CC_logo.svg.png?_=20200616120137',
+  },
+  {
+    section: 'Web Development',
+    name: 'HTML',
+    level: 'Advanced',
+    percentage: 90,
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg',
+  },
+  {
+    section: 'Web Development',
+    name: 'CSS',
+    level: 'Advanced',
+    percentage: 78,
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg',
+  },
+  {
+    section: 'Web Development',
+    name: 'JavaScript',
+    level: 'Advanced',
+    percentage: 76,
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg',
+  },
+  {
+    section: 'Web Development',
+    name: 'TypeScript',
+    level: 'Intermediate',
+    percentage: 41,
+    icon: 'https://icon.icepanel.io/Technology/svg/TypeScript.svg',
+  },
+  {
+    section: 'Web Development',
+    name: 'Angular',
+    level: 'Intermediate',
+    percentage: 55,
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-plain.svg',
+  },
+  {
+    section: 'Programming',
+    name: 'Python',
+    level: 'Intermediate-Advanced',
+    percentage: 65,
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-plain.svg',
+  },
+];
+
+export const SKILL_SECTIONS = ['Design', 'Web Development', 'Programming'];

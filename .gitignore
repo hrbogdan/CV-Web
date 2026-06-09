@@ -19,6 +19,8 @@ yarn-error.log
 *.launch
 .settings/
 *.sublime-workspace
+.github
+.angular/
 
 # Visual Studio Code
 .vscode/*
@@ -30,7 +32,6 @@ yarn-error.log
 .history/*
 
 # Miscellaneous
-/.angular/cache
 .sass-cache/
 /connect.lock
 /coverage
